@@ -17,10 +17,10 @@ from the nice folks who provide it upstream....
 ### image names
 
 My custom images via bento are named:
-   almalinux-9.3-aarch64/20231220  (parallels, 0)
-   debian-12.4-aarch64/20231220    (parallels, 0)
-   opensuse-15.5-aarch64/20231220  (parallels, 0)
-   ubuntu-22.04.3-aarch64/20231220 (parallels, 0)
+   * almalinux-9.3-aarch64/20231220  (parallels, 0)
+   * debian-12.4-aarch64/20231220    (parallels, 0)
+   * opensuse-15.5-aarch64/20231220  (parallels, 0)
+   * ubuntu-22.04.3-aarch64/20231220 (parallels, 0)
 
 ### bento quickstart
 
