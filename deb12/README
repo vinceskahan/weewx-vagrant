@@ -1,0 +1,5 @@
+
+dpkg = build and run weewx using the dpkg
+pip  = build via pip and run non-privileged
+
+These should work on any dpkg-enabled os
