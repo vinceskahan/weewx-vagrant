@@ -3,6 +3,7 @@
 # add rsyslog to test weewx syslogging
 apt-get update
 apt install -y wget gnupg vim rsyslog git
+#wget -qO - https://weewx.com/keys-old.html | \
 wget -qO - https://weewx.com/keys.html | \
     gpg --dearmor --output /etc/apt/trusted.gpg.d/weewx.gpg
 echo "deb [arch=all] https://weewx.com/apt/python3 buster main" | tee /etc/apt/sources.list.d/weewx.list
