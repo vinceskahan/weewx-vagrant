@@ -1,0 +1,15 @@
+
+This installs a debian12 only 
+for Vagrant using Parallels as the VM app on a m1 mac mini.
+
+The intent is to support random testing from a known baseline
+so the provisioner script is empty.
+
+The same Vagrantfile should work on Intel if you change the
+config.vm.box to any recent debian-based os of your choosing
+and change the provider to virtualbox (typically).
+
+For apple silicon users - the image name here is a Parallels
+base image I built using the excellent 'bento' tool.  See
+the toplevel README for details
+

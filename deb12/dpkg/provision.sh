@@ -14,6 +14,9 @@ DEBIAN_FRONTEND=noninteractive apt-get install -y weewx
 sudo cp /etc/weewx/rsyslog.d/weewx.conf /etc/rsyslog.d/weewx.conf \
     && sudo systemctl restart rsyslog
 
+# set up logrotate to match
+sudo cp /etc/weewx/logrotate.d/weewx /etc/logrotate.d/weewx
+
 # add belchertown skin and restart weewx
 git clone https://github.com/poblabs/weewx-belchertown.git
 sudo weectl extension install -y weewx-belchertown

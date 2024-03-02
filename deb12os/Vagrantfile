@@ -1,0 +1,11 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+Vagrant.configure("2") do |config|
+  config.vm.box = "debian-12.4-aarch64/20231220"
+  config.vm.hostname = "deb12os"
+  config.vm.box_check_update = false
+  config.vm.provision "shell", path: "provision.sh"
+end
+
+
+

@@ -30,6 +30,9 @@ weectl extension install -y weewx-belchertown
 sudo cp ~/weewx-data/util/rsyslog.d/weewx.conf /etc/rsyslog.d/weewx.conf \
     && sudo systemctl restart rsyslog
 
+# set up logrotate to match
+sudo cp ~/weewx-data/util/logrotate.d/weewx /etc/logrotate.d/weewx
+
 # set up systemd and start weewx up
 sudo sh /home/${USER}/weewx-data/scripts/setup-daemon.sh
 sudo systemctl start weewx
