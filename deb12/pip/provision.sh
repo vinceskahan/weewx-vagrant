@@ -34,6 +34,7 @@ sudo cp ~/weewx-data/util/rsyslog.d/weewx.conf /etc/rsyslog.d/weewx.conf \
 sudo apt-get install -y nginx
 sudo mkdir /var/www/html/weewx
 sudo chown ${USER}:${USER} /var/www/html/weewx
+ln -s /var/www/html/weewx ${USER}/weewx-data/public_html
 
 # set up logrotate to match
 sudo cp ~/weewx-data/util/logrotate.d/weewx /etc/logrotate.d/weewx
